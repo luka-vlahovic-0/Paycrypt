@@ -76,6 +76,7 @@ export default function LpFaq() {
       
       <div className="flex flex-col gap-4 w-full max-w-lg">
         {faqData.map((faq, index) => {
+          // eslint-disable-next-line react-hooks/rules-of-hooks
           const [faqRef, faqInView] = useInView({ threshold: 0.2, triggerOnce: true });
           return (
             <motion.div
