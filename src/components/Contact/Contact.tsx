@@ -57,7 +57,8 @@ const slideFromRight = {
 
 export default function Contact() {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-20 max-w-7xl mx-auto mt-16 md:mt-12 mb-6 md:mb-4 px-4">
+    <div className="min-h-screen w-full bg-[#f9f8ff] flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-20 max-w-full mx-auto px-4">
+
       <motion.div
         className="flex flex-col text-center md:text-left max-w-2xl"
         initial="hidden"
@@ -76,7 +77,7 @@ export default function Contact() {
         >
           Let&apos;s get in Touch!
         </motion.h1>
-        <motion.hr className="w-24 md:w-28 border-t-4 border-[#8952e3] mb-6" variants={slideFromRight} />
+        <motion.hr className="w-24 md:w-28 border-t-4 border-[#8952e3] mb-6 hidden md:block" variants={slideFromRight} />
         <motion.h2
           className="text-base md:text-lg lg:text-[24px] font-manrope text-[#000f5c]"
           variants={textVariants}
@@ -97,7 +98,7 @@ export default function Contact() {
         <Image
           src={zenaImg}
           alt="Zena"
-          className="absolute bottom-[0px] right-[35px] w-[120px] z-10 pointer-events-none hidden md:block"
+          className="absolute bottom-[5px] right-[138px] w-[120px] z-10 pointer-events-none hidden md:block"
           priority={true}
         />
       </motion.div>
